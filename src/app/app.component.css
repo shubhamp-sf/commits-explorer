@@ -1,0 +1,10 @@
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 64px;
+}
+.mat-toolbar {
+  background: whitesmoke;
+}
+.mat-card {
+  width: 100%;
+}
