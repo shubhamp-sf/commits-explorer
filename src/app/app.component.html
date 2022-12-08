@@ -10,8 +10,15 @@
         <input matInput placeholder="Placeholder">
         <mat-icon matSuffix>link</mat-icon>
       </mat-form-field>
-      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="primary" (click)="fetchCommits()">Submit</button>
+    </mat-card-content>
+  </mat-card>
 
+  <mat-card>
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let commit of commits">{{commit.commit.message.split("\n\n")[0]}}</li>
+      </ul>
     </mat-card-content>
   </mat-card>
   
